@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script type="text/javascript">
+	var Image = new Array("tailor1.jpg","tailor2.jpg","tailor3.jpg", "tailor4.jpg");
+	var Image_Number = 0;
+	var Image_Length = Image.length - 1;
+	
+function slide(num)
+{
+	Image_Number=Image_Number+num;
+	if (Image_Number>Image_Length)
+	{
+		Image_Number=0;
+	};
+	if (Image_Number<0)
+	{
+		Image_Number=Image_Length;
+	}
+	document.getElementById('slideshow').src=Image[Image_Number];
+	document.getElementById('slideshow').height = "405";
+
+}
+function auto()
+	{
+		setInterval("slide(1)", 2000); //where slide(1) is the function and 2000 are miliseconds equal to 2 sec
+	}
+
+</script>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body onload="auto()">
+
+	<div class="header">
+		<h2 class="logo">NEW SHERAZ</h2>
+		<input type="checkbox" name="" id="chk">
+		<label for="chk" class="show-menu">
+			<span class="fas fa-ellipsis-h"></span>		<!-- for displaying icon -->
+		</label>
+
+		<ul class="menu">
+			<a href="#">Home</a>
+			<a href="ourservice.html">Services</a>
+			<a href="ourteam.html">Our Team</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="contactus.html">Contact Us</a>
+			<label for="chk" class="hide-menu">
+				<span class="fas fa-times"></span>		<!-- for displaying icon -->
+			</label>
+		</ul>
+
+	</div>
+
+	<div class="content">
+		<br/>
+
+		<h2 align="center" style="color: #2c3e50">"A great tailor is like a great personal trainer <br/> they tailor that suit to your natural physique".</h2>
+		<table style="border-collapse: collapse">
+			<tr>
+	<center>
+		<td>
+	<img src="1.jpg" style=" float: left; display: block; height: 42.9%; border-top-left-radius: 10px; border-bottom-left-radius: 10px" />
+<button class="btn"> Men's Ware</button>
+</td>
+<td height="50%" width="50%" align="center">
+<img src="tailor1.jpg"  id="slideshow" style=" box-shadow: inset 0px 0px 40px 40px #DBA632" />
+</td>
+<td>
+	<img src="2.jpg" style=" float: left; display: block; height: 42.9%; border-top-right-radius: 10px; border-bottom-right-radius: 10px"/>
+	<button class="btn2"> Women's Ware</button>
+</td>
+</tr>
+
+	</center>
+	</table>
+	<br/>
+
+	<hr/>
+
+<br/>
+
+	<div class="services-section">
+			<div class="inner-width">
+				<h1 class="section-title">Our Services</h1>
+					<div class="border"> </div>
+					<div class="services-container">
+						
+						<div class="service-box">
+							<div class="service-icon"> 
+								<span class="fas fa-map-marker-alt"></span>		<!-- for displaying icon -->
+							</div>
+							<div class="service-title">Location</div>
+							<div class="service-desc">
+							This will be your handiest way to find a location, contact information of your local tailors. 
+							</div>
+						</div>
+						
+						<div class="service-box">
+							<div class="service-icon"> 
+								<span class="fa fa-tshirt"></span>		<!-- for displaying icon -->
+							</div>
+							<div class="service-title">Products Available</div>
+							<div class="service-desc">
+							Discover what products are available for drop shipping from our print-on-demand fulfillment center in Lahore.
+							</div>
+						</div>
+						
+						<div class="service-box">
+							<div class="service-icon"> 
+								<span class="fas fa-tags"></span>		<!-- for displaying icon -->
+							</div>
+							<div class="service-title">Discount</div>
+							<div class="service-desc">
+							Selling goods or services for less than their regular or list price. Buy now before the offer expire.
+							</div>
+						</div>
+						
+						<div class="service-box">
+							<div class="service-icon"> 
+								<span class="fas fa-dolly"></span>		<!-- for displaying icon -->
+							</div>
+							<div class="service-title">Shipping Information </div>
+							<div class="service-desc">
+							Standard shipping is your average shipping service, not shipped quickly overnight for expensive rates, but not using slower tracked mail services either.
+							</div>
+						</div>
+						
+						<div class="service-box">
+							<div class="service-icon"> 
+								<span class="far fa-clock"></span>		<!-- for displaying icon -->
+							</div>
+							<div class="service-title">Our Timings</div>
+							<div class="service-desc">
+							Time in which our workers will be available or when they'll be free 
+							</div>
+						</div>
+						
+						<div class="service-box">
+							<div class="service-icon"> 
+								<span class="fas fa-shopping-cart"></span>		<!-- for displaying icon -->
+							</div>
+							<div class="service-title">Shop Now</div>
+							<div class="service-desc">
+							Get dressed without the stress and explore all our faves now!
+							</div>
+						</div>
+						
+						
+					</div>
+			</div>
+		</div>
+
+
+<hr/>
+<br/>
+<center>
+	<table width="70%" style="border-collapse: collapse;" align="right">
+		<tr>
+			<td style="text-align: center;">
+	<span style="color: grey; font-size: 12px">Copyright &copy; 2003-2019 Tailor Store NEW SHERAZ. All rights reserved.<br/>
+All works are property of their respective owners and may not be<br/> used elsewhere without written permission.</span>
+</td>
+<td align="right" style="text-align: center;" >
+	<a href="#">
+		<div class="service-icon2">
+			<span class="fab fa-facebook"></span>		<!-- for displaying icon -->
+		</div>
+	</a>
+	<a href="#">
+		<div class="service-icon2">
+			<span class="fab fa-skype"></span>		<!-- for displaying icon -->
+		</div>
+	</a>
+	<a href="#">
+		<div class="service-icon2">
+			<span class="fab fa-twitter"></span>		<!-- for displaying icon -->
+		</div>
+	</a>
+	<a href="#">
+		<div class="service-icon2">
+			<span class="fab fa-instagram"></span>		<!-- for displaying icon -->
+		</div>
+	</a>
+</td>
+</tr>
+</table>
+</center>
+	
+	</div>
+</body>
+</html>
